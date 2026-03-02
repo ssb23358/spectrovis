@@ -201,15 +201,15 @@ Spectral features map to CIELAB coordinates for **perceptual uniformity**:
 
 | Feature | CIELAB Dimension | Mapping |
 |---------|-----------------|---------|
-| Mel centroid | Hue angle $h$ in $a^{*}b^{*}$ plane | $h = \mu_c \cdot 330°$ |
-| Spectral spread | Chroma $C^{*} = \sqrt{a^{*2} + b^{*2}}$ | $C^{*} = 25 + \sigma \cdot 70$ |
-| Loudness (LUFS) | Lightness $L^{*}$ | $L^{*} = 25 + v' \cdot 70$ |
+| Mel centroid | Hue angle $h$ in $a^{\ast}b^{\ast}$ plane | $h = \mu_c \cdot 330°$ |
+| Spectral spread | Chroma $C^{\ast} = \sqrt{a^{\ast 2} + b^{\ast 2}}$ | $C^{\ast} = 25 + \sigma \cdot 70$ |
+| Loudness (LUFS) | Lightness $L^{\ast}$ | $L^{\ast} = 25 + v' \cdot 70$ |
 
-$$a^{*} = C^{*} \cos(h), \quad b^{*} = C^{*} \sin(h)$$
+$$a^{\ast} = C^{\ast} \cos(h), \quad b^{\ast} = C^{\ast} \sin(h)$$
 
 **CIELAB to sRGB conversion:**
 
-$$L^{*}, a^{*}, b^{*} \xrightarrow{\text{inverse}} X, Y, Z \xrightarrow{D65} R_{\text{lin}}, G_{\text{lin}}, B_{\text{lin}} \xrightarrow{\gamma_{2.4}} R, G, B$$
+$$L^{\ast}, a^{\ast}, b^{\ast} \xrightarrow{\text{inverse}} X, Y, Z \xrightarrow{D65} R_{\text{lin}}, G_{\text{lin}}, B_{\text{lin}} \xrightarrow{\gamma_{2.4}} R, G, B$$
 
 **Soft gamut compression** replaces hard clamping for out-of-gamut colors, preserving hue relationships:
 
